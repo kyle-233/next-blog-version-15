@@ -2,7 +2,7 @@ import { readFileSync, readdirSync } from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
-import { PostProps } from '../types'
+import { PostProps } from '@/types'
 
 const postsDirectory = join(process.cwd(), 'content', 'blogs')
 
