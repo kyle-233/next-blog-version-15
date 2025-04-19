@@ -34,7 +34,6 @@ const SlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const allPosts = await getAllPosts()
-  console.log('allPosts', allPosts)
   return allPosts.map((post) => ({
     slug: post.slug,
   }))

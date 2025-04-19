@@ -15,8 +15,18 @@ authors:
 
 To create a project, run:
 
-```command
+```shell title="Terminal"
 npx create-next-app@latest
+```
+
+```js title="App.tsx"
+const BlogPage = () => {
+	import { getAllPosts } from '@/lib/reader'
+	const allPosts = getAllPosts()
+	return (
+        ...
+    )
+}
 ```
 
 <Text />

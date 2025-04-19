@@ -11,6 +11,7 @@
   --pink: lab(63 59.32 -1.47);
   --purple: lab(33 42.09 -43.19);
   --view-transition-duration: 0.5s;
+  --codeTitle-bg: #393d51;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +26,17 @@
     --pink: lab(81 32.36 -7.02);
     --purple: lab(78 19.97 -36.75);
     --view-transition-duration: 0.5s;
+    --codeTitle-bg: #2f3243;
   }
+}
+
+.markdown {
+  line-height: 28px;
+  --path: none;
+  --radius-top: 12px;
+  --radius-bottom: 12px;
+  --padding-top: 1rem;
+  --padding-bottom: 1rem;
 }
 
 @utility container {
