@@ -5,7 +5,7 @@
 }
 
 .markdown a {
-  @apply border-b-[1px] border-[--link] text-[--link];
+  @apply border-b-[1px] border-(--link) text-(--link);
 }
 
 .markdown hr {
@@ -33,7 +33,7 @@
 }
 
 .markdown figcaption[data-rehype-pretty-code-title] {
-  @apply -mx-4 px-4 text-sm text-gray-200 py-1;
+  @apply -mx-4 px-4 text-xs text-gray-200 py-1 font-mono;
   border-top-right-radius: var(--radius-top);
   border-top-left-radius: var(--radius-top);
   background-color: var(--codeTitle-bg);

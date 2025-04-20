@@ -1,5 +1,6 @@
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
 import rehypePrettyCode from 'rehype-pretty-code'
+import remarkGfm from 'remark-gfm'
 import { cn } from '@/lib/utils'
 import { MdxImage } from './mdx-image'
 import { MdxCode } from './mdx-code'
@@ -67,6 +68,7 @@ export const Mdx = async ({ content = '', postComponents = {} }: MdxProps) => {
   const options: MDXRemoteProps['options'] = {
     parseFrontmatter: true,
     mdxOptions: {
+      remarkPlugins: [remarkGfm],
       rehypePlugins: [
         [
           rehypePrettyCode,
